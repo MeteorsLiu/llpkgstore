@@ -1,6 +1,8 @@
 package internal
 
 import (
+	"log"
+
 	"github.com/MeteorsLiu/llpkgstore/actions"
 	"github.com/spf13/cobra"
 )
@@ -13,6 +15,7 @@ var postProcessingCmd = &cobra.Command{
 }
 
 func runPostProcessingCmd(_ *cobra.Command, _ []string) {
+	log.Println("run post processing")
 	actions.NewDefaultClient().Release()
 }
 
