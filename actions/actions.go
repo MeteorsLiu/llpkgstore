@@ -103,7 +103,7 @@ func CreateBranch(branchName, tag string) error {
 // it MUST NOT be used outside Github Action.
 func latestCommitMessageInPR() string {
 	// assume we're at PR's ref
-	ret, err := exec.Command("git", "show", "-s", "--format", "%s").CombinedOutput()
+	ret, err := exec.Command("git", "show", "-s", os.Getenv("GITHUB_SHA"), "--format", "%s").CombinedOutput()
 	if err != nil {
 		panic(string(ret))
 	}
