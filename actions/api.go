@@ -95,7 +95,7 @@ func (d *DefaultClient) isAssociatedWithPullRequest(sha string) (bool, error) {
 	)
 	log.Println(pulls)
 	return len(pulls) > 0 &&
-		pulls[0].GetMerged(), err
+		pulls[0].GetState() == "closed", err
 }
 
 // currentPRCommit returns all the commits for the current PR.
