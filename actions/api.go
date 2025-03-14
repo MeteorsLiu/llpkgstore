@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"log"
 	"maps"
 	"net/http"
 	"os"
@@ -218,6 +219,7 @@ func (d *DefaultClient) Release() {
 	}
 	// not a merge commit, skip it.
 	if !ok {
+		log.Println("not a merge commit")
 		return
 	}
 	version := mappedVersion()
@@ -227,6 +229,8 @@ func (d *DefaultClient) Release() {
 	}
 	// has tag already, skip it.
 	if ok {
+		log.Println("tag exists")
+
 		return
 	}
 	ctx, cancel := context.WithTimeout(context.TODO(), 30*time.Second)
