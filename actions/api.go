@@ -93,7 +93,7 @@ func (d *DefaultClient) isAssociatedWithPullRequest(sha string) (bool, error) {
 	pulls, _, err := d.client.PullRequests.ListPullRequestsWithCommit(
 		ctx, d.owner, d.repo, sha, &github.ListOptions{},
 	)
-
+	log.Println(pulls)
 	return len(pulls) > 0 &&
 		pulls[0].GetMerged(), err
 }
