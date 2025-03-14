@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/MeteorsLiu/llpkgstore/config"
 	"github.com/google/go-github/v69/github"
-	"github.com/goplus/llpkgstore/config"
 )
 
 const (

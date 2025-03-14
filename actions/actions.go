@@ -64,7 +64,7 @@ func Changes() []string {
 
 // Repository returns owner and repository name for the current repository
 //
-// Example: goplus/llpkg, owner: goplus, repo: llpkg
+// Example: MeteorsLiu/llpkg, owner: MeteorsLiu, repo: llpkg
 func Repository() (owner, repo string) {
 	thisRepo := os.Getenv("GITHUB_REPOSITORY")
 	if thisRepo == "" {

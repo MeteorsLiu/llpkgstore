@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/goplus/llpkgstore/actions/generator"
-	"github.com/goplus/llpkgstore/actions/hashutils"
+	"github.com/MeteorsLiu/llpkgstore/actions/generator"
+	"github.com/MeteorsLiu/llpkgstore/actions/hashutils"
 )
 
 var (
@@ -25,7 +25,7 @@ var (
 
 const (
 	// default llpkg repo
-	goplusRepo = "github.com/goplus/llpkg/"
+	MeteorsLiuRepo = "github.com/MeteorsLiu/llpkg/"
 	// llcppg running default version
 	llcppgGoVersion = "1.20.14"
 	// llcppg default config file, which MUST exist in specifed dir
@@ -74,9 +74,9 @@ func New(dir, packageName string) generator.Generator {
 }
 
 // normalizeModulePath returns a normalized module path like
-// cjson => github.com/goplus/llpkg/cjson
+// cjson => github.com/MeteorsLiu/llpkg/cjson
 func (l *llcppgGenerator) normalizeModulePath() string {
-	return goplusRepo + l.packageName
+	return MeteorsLiuRepo + l.packageName
 }
 
 func (l *llcppgGenerator) Generate() error {
