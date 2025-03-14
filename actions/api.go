@@ -238,7 +238,7 @@ func (d *DefaultClient) Release() {
 
 	// tag the commit
 	tagRef := "refs/tags/" + version
-	_, _, err = d.client.Git.CreateRef(ctx, d.owner, d.repo, &github.Reference{
+	ref, resp, err := d.client.Git.CreateRef(ctx, d.owner, d.repo, &github.Reference{
 		Ref: &tagRef,
 		Object: &github.GitObject{
 			SHA: &sha,
@@ -248,6 +248,8 @@ func (d *DefaultClient) Release() {
 	if err != nil {
 		panic(err)
 	}
+
+	log.Println(ref, resp)
 
 	// TODO: write it to llpkgstore.json
 }
