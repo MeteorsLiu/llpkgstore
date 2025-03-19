@@ -107,8 +107,7 @@ func (c *conanInstaller) Search(pkg upstream.Package) ([]string, error) {
 	var ret []string
 
 	for _, field := range strings.Fields(string(out)) {
-		prefix, _, found := strings.Cut(field, "/")
-		if found && prefix == pkg.Name {
+		if strings.HasPrefix(field, pkg.Name+"/") {
 			ret = append(ret, field)
 		}
 	}
