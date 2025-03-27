@@ -35,6 +35,7 @@ func runLLCppgVerificationWithDir(dir string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	generator := llcppg.New(dir, cfg.Upstream.Package.Name)
 
 	generated := filepath.Join(dir, ".generated")
