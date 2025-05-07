@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/goplus/llpkgstore/internal/actions/env"
-	"github.com/goplus/llpkgstore/internal/actions/llpkg"
-	"github.com/goplus/llpkgstore/internal/actions/versions"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/env"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/llpkg"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/versions"
 )
 
 // CheckPR validates PR changes and returns affected packages

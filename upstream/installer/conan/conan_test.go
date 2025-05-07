@@ -11,8 +11,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/goplus/llpkgstore/internal/pc"
-	"github.com/goplus/llpkgstore/upstream"
+	"github.com/MeteorsLiu/llpkgstore/internal/pc"
+	"github.com/MeteorsLiu/llpkgstore/upstream"
 )
 
 type packageSort []upstream.Package
@@ -62,7 +62,7 @@ func TestConanCJSON(t *testing.T) {
 	}
 }
 
-// https://github.com/goplus/llpkgstore/issues/19
+// https://github.com/MeteorsLiu/llpkgstore/issues/19
 func TestConanIssue19(t *testing.T) {
 	c := &conanInstaller{
 		config: map[string]string{},

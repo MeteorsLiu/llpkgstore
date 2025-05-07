@@ -8,8 +8,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/goplus/llpkgstore/config"
-	"github.com/goplus/llpkgstore/upstream"
+	"github.com/MeteorsLiu/llpkgstore/config"
+	"github.com/MeteorsLiu/llpkgstore/upstream"
 )
 
 var ErrWrongPackagePath = errors.New("llpkg: wrong package path")

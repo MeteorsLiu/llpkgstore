@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/goplus/llpkgstore/config"
+	"github.com/MeteorsLiu/llpkgstore/config"
 )
 
 func demoDir() (dir string, err error) {

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/goplus/llpkgstore/internal/demo"
+	"github.com/MeteorsLiu/llpkgstore/internal/demo"
 	"github.com/spf13/cobra"
 )
 

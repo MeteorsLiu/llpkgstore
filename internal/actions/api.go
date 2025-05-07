@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/env"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/llpkg"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/mappingtable"
 	"github.com/google/go-github/v69/github"
-	"github.com/goplus/llpkgstore/internal/actions/env"
-	"github.com/goplus/llpkgstore/internal/actions/llpkg"
-	"github.com/goplus/llpkgstore/internal/actions/mappingtable"
 	"golang.org/x/sync/errgroup"
 )
 

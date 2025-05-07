@@ -21,7 +21,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/goplus/llpkgstore/internal/pc"
+	"github.com/MeteorsLiu/llpkgstore/internal/pc"
 )
 
 func runDemo(demoRoot string) error {

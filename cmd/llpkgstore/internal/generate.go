@@ -7,11 +7,11 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/goplus/llpkgstore/config"
-	"github.com/goplus/llpkgstore/internal/actions/generator/llcppg"
-	"github.com/goplus/llpkgstore/internal/actions/llpkg"
-	"github.com/goplus/llpkgstore/internal/file"
-	"github.com/goplus/llpkgstore/internal/pc"
+	"github.com/MeteorsLiu/llpkgstore/config"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/generator/llcppg"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/llpkg"
+	"github.com/MeteorsLiu/llpkgstore/internal/file"
+	"github.com/MeteorsLiu/llpkgstore/internal/pc"
 	"github.com/spf13/cobra"
 )
 

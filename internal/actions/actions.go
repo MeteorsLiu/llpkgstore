@@ -14,13 +14,13 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/goplus/llpkgstore/internal/actions/env"
-	"github.com/goplus/llpkgstore/internal/actions/llpkg"
-	"github.com/goplus/llpkgstore/internal/actions/mappingtable"
-	"github.com/goplus/llpkgstore/internal/actions/versions"
-	"github.com/goplus/llpkgstore/internal/file"
-	"github.com/goplus/llpkgstore/internal/pc"
-	"github.com/goplus/llpkgstore/upstream"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/env"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/llpkg"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/mappingtable"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/versions"
+	"github.com/MeteorsLiu/llpkgstore/internal/file"
+	"github.com/MeteorsLiu/llpkgstore/internal/pc"
+	"github.com/MeteorsLiu/llpkgstore/upstream"
 	"golang.org/x/mod/semver"
 )
 
@@ -200,7 +200,7 @@ func checkLegacyVersion(ver *mappingtable.Versions, pkg *llpkg.LLPkg, mappedVers
 	if semver.MajorMinor(previousVersion) == semver.MajorMinor(currentVersion) &&
 		semver.Compare(previousVersion, currentVersion) > 0 {
 		return fmt.Errorf(`actions: cannot submit a historical legacy version.
-	for more details: https://github.com/goplus/llpkgstore/blob/main/docs/llpkgstore.md#branch-maintenance-strategy`)
+	for more details: https://github.com/MeteorsLiu/llpkgstore/blob/main/docs/llpkgstore.md#branch-maintenance-strategy`)
 	}
 
 	// case5: we're the latest patch version for current major and minor, check the mapped version

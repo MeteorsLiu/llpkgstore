@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goplus/llpkgstore/internal/actions/llpkg"
-	"github.com/goplus/llpkgstore/internal/actions/mappingtable"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/llpkg"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/mappingtable"
 )
 
 func TestHasTag(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/goplus/llpkgstore/internal/file"
+	"github.com/MeteorsLiu/llpkgstore/internal/file"
 )
 
 func TestCMD(t *testing.T) {

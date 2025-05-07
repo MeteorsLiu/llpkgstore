@@ -10,9 +10,9 @@ import (
 	"slices"
 	"time"
 
-	"github.com/goplus/llpkgstore/internal/actions/llpkg"
-	vrs "github.com/goplus/llpkgstore/internal/actions/versions"
-	"github.com/goplus/llpkgstore/metadata"
+	"github.com/MeteorsLiu/llpkgstore/internal/actions/llpkg"
+	vrs "github.com/MeteorsLiu/llpkgstore/internal/actions/versions"
+	"github.com/MeteorsLiu/llpkgstore/metadata"
 	"golang.org/x/mod/semver"
 )
 

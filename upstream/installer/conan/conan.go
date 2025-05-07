@@ -9,10 +9,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/goplus/llpkgstore/internal/cmdbuilder"
-	"github.com/goplus/llpkgstore/internal/file"
-	"github.com/goplus/llpkgstore/internal/pc"
-	"github.com/goplus/llpkgstore/upstream"
+	"github.com/MeteorsLiu/llpkgstore/internal/cmdbuilder"
+	"github.com/MeteorsLiu/llpkgstore/internal/file"
+	"github.com/MeteorsLiu/llpkgstore/internal/pc"
+	"github.com/MeteorsLiu/llpkgstore/upstream"
 )
 
 var (

@@ -1,6 +1,6 @@
 package llpkg
 
-import "github.com/goplus/llpkgstore/internal/actions/versions"
+import "github.com/MeteorsLiu/llpkgstore/internal/actions/versions"
 
 type (
 	PackageName string
